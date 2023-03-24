@@ -1,0 +1,13 @@
+安装示例
+
+INSTALL(FILES ... DESTINATION ...)
+INSTALL(PROGRAMS ... DESTINATION ...)
+INSTALL(DIRECTORY ... DESTINATION ...) 
+    注意：目录后面是斜杠，会将内容拷贝，不加斜杠，只拷贝文件夹本身
+
+可以写绝对路径
+CMAKE_INSTALL_PREFIX 默认是 /user/local
+默认安装到/usr/local
+
+执行make
+执行make isntall 就会将这些文件拷贝过去

@@ -1,0 +1,27 @@
+演示了同时生成动态库和静态库
+
+SET_TARGET_PROPERTIES
+
+括号里的东西都要大写
+
+------------ 安装
+
+INSTALL(TARGETS ... )
+
+LIBRARY 动态库
+ARCHIVE 静态库
+RUNTIME 特指可执行二进制
+
+
+这个命令带了参数，指定了相对路径的安装位置，这个-D后面可加空格，也可不加
+cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+
+
+
+
+
+-------------- 步骤
+1. cd build
+2. cmake ..
+3. make
+4. make install  

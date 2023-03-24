@@ -1,0 +1,19 @@
+如何使用动态库/静态库
+
+INCLUDE_DIRECTORIES(path)
+解决找不到头文件的问题
+
+LINK_DIRECTORIES(path)
+提供链接库的位置【可选】
+
+TARGET_LINK_LIBRARIES(main libhello.so)
+具体链接库信息
+注意：这个要放在ADD_EXECUTABLE之后
+这个libhello.so，只要在系统path里即可
+
+--------------------- 第二种方案 -----------------------
+
+CMAKE_INCLUDE_PATH
+CMAKE_LIBRARY_PATH
+
+这两个不是cmake的一部分，而是linux系统提供的变量，也可以用来指定

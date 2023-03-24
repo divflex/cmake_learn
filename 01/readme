@@ -1,0 +1,30 @@
+command:
+c++ main.cpp
+
+will produce:
+./a.out
+
+-------------------------------------------------------- cmakelists.txt 的解释
+PROJECT(HELLO CXX) 项目名称及使用语言
+
+隐式定义了两个变量，都指向本目录
+<NAME>_BINARY_DIR
+<NAME>_SOURCE_DIR
+
+为了防止name被修改，还定义了。它们是一样的。
+PROJECT_BINARY_DIR
+PROJECT_SOURCE_DIR
+
+--- SET ---
+用来指定变量
+
+--- MESSAGE ---
+终端输出信息，有三种
+SEND_ERROR  有错误
+STATUS      一般信息
+FATAL_ERROR 立即停止
+
+
+--- ADD_EXECUTABLE ---
+生成可执行文件是hello
+ADD_EXECUTABLE(hello ${SRC_LIST}) 

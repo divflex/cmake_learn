@@ -1,0 +1,8 @@
+新命令: ADD_LIBRARY
+
+ADD_LIBRARY(hello SHARED hello.cpp)
+
+SHARED 动态库/共享库
+STATIC 静态库
+
+生成文件会自动加lib前缀
